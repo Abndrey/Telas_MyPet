@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Agendamento Pet</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Agendamento Pet</h1>
+    <form id="formAgendamento" novalidate>
+      <fieldset>
+        <legend>Informações do Tutor</legend>
+        <div class="input-group">
+          <input type="text" id="nomeTutor" placeholder=" " required>
+          <label for="nomeTutor">Nome do Tutor</label>
+        </div>
+
+        <div class="input-group">
+          <input type="tel" id="telefone" placeholder=" " required>
+          <label for="telefone">Telefone</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Informações do Pet</legend>
+        <div class="input-group">
+          <input type="text" id="nomePet" placeholder=" " required>
+          <label for="nomePet">Nome do Pet</label>
+        </div>
+
+        <div class="input-group">
+          <select id="especie" required>
+            <option value="" disabled selected></option>
+            <option>Cachorro</option>
+            <option>Gato</option>
+            <option>Outro</option>
+          </select>
+          <label for="especie">Espécie</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Serviços</legend>
+
+        <div class="input-group">
+          <select id="servico" required>
+            <option value="" disabled selected></option>
+            <option>Banho</option>
+            <option>Tosa</option>
+            <option>Consulta</option>
+            <option>Check-up</option>
+          </select>
+          <label for="servico">Serviço</label>
+        </div>
+
+        <div class="input-group">
+          <input type="datetime-local" id="dataHora" placeholder=" " required>
+          <label for="dataHora">Data e Hora</label>
+        </div>
+      </fieldset>
+
+      <button type="submit">Agendar</button>
+    </form>
+
+    <div class="resultado" id="resultado"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

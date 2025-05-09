@@ -1,0 +1,106 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
+    padding: 40px 20px;
+  }
+  
+  .container {
+    max-width: 700px;
+    margin: auto;
+    background: #fff;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.6s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  h1 {
+    text-align: center;
+    color: #1565c0;
+    margin-bottom: 30px;
+    font-size: 2em;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  fieldset {
+    border: none;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  
+  legend {
+    font-weight: bold;
+    color: #0d47a1;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+  }
+  
+  label {
+    margin-top: 12px;
+    font-size: 0.95em;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 12px 14px;
+    margin-top: 6px;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: all 0.2s;
+    background-color: #fff;
+  }
+  
+  input:focus, select:focus {
+    border-color: #42a5f5;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(66, 165, 245, 0.2);
+  }
+  
+  button {
+    background-color: #1976d2;
+    color: white;
+    padding: 14px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #1565c0;
+  }
+  
+  .resultado {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #e8f5e9;
+    border-left: 6px solid #43a047;
+    color: #2e7d32;
+    border-radius: 10px;
+    font-size: 1em;
+  }
+  
