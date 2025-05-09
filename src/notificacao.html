@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizar Notificação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Personalizar Notificação</h1>
+
+        <!-- Formulário para adicionar compromissos -->
+        <form id="compromisso-form">
+            <div class="form-group">
+                <label for="compromisso">Tipo de Compromisso</label>
+                <select id="compromisso" name="compromisso">
+                    <option value="consulta">Consulta</option>
+                    <option value="vacina">Vacinação</option>
+                    <option value="receita">Renovação de Receita</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="data">Data do Compromisso</label>
+                <input type="datetime-local" id="data" name="data" required>
+            </div>
+
+            <div class="form-group">
+                <label for="antecedencia">Antecedência da Notificação</label>
+                <input type="number" id="antecedencia" name="antecedencia" min="1" required> 
+                <select id="unidade" name="unidade">
+                    <option value="dias">dias</option>
+                    <option value="horas">horas</option>
+                    <option value="meses">meses</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="importancia">Importância da Notificação</label>
+                <select id="importancia" name="importancia">
+                    <option value="baixa">Baixa</option>
+                    <option value="media">Média</option>
+                    <option value="alta">Alta</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="cor">Cor da Notificação</label>
+                <input type="color" id="cor" name="cor" value="#4CAF50">
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Salvar</button>
+            </div>
+        </form>
+
+        <h2>Meus Compromissos</h2>
+        <div id="lista-compromissos"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
