@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro Petshop</title>
+  <link rel="stylesheet" href="./petshop.css">
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Cadastro do Petshop</h2>
+    <form id="petshopForm">
+      <label for="nome">Nome do Petshop:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone" pattern="\(\d{2}\)\s\d{4,5}-\d{4}" placeholder="(99)99999-9999" required>
+
+      <label for="cnpj">CNPJ:</label>
+      <input type="text" id="cnpj" name="cnpj" pattern="\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}" placeholder="00.000.000/0000-00" required>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+    <p id="mensagem" style="text-align:center; margin-top:15px; color: green;"></p>
+  </div>
+
+  <script src="./petshop.js"></script>
+
+</body>
+</html>
