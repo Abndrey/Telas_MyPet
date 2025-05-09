@@ -1,0 +1,27 @@
+
+		<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Formulário</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<link rel="stylesheet" href="../style/vacina.css">
+</head>
+<body>
+	<h1>vacina</h1>
+	<form id="vacinas">
+		
+		<input type="text" value="Nome vacina:" onfocus="if (this.value == 'Nome vacina:') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Nome vacina:';}">
+
+		<input type="text" value="Data da vacina:" onfocus="if (this.value == 'Data da vacina:') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Data de Nascimento:';}">
+	
+		<input type="text" value="idade vacina:" onfocus="if (this.value == 'idade vacina:') {this.value = '';}" onblur="if (this.value == '') {this.value = 'idade vacina:';}">
+
+		<div class="btn-class">
+			<button type="button" id="subimit-btn-salvar" onclick="salvar()">salvar</button>
+			
+		 </div>
+	</form>	
+	<script src="../style/vacina.css"></script>
+</body>
+</html>
