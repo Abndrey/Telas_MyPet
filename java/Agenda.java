@@ -4,7 +4,8 @@ public class Agenda {
     private String banho;
     private String checkUp;
     private String consultaMarcada;
-    
+
+    @Deprecated
     public Agenda() {
     }
 
